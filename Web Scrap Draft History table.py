@@ -29,3 +29,7 @@ for row in table.find_all("tr"):
     if cells:
         row_data = [cell.text.strip() for cell in cells]
         print(row_data)
+        
+## Now put table data in a Pandas DataFrame
+## update to parameter driven
+## convert to a def Function
