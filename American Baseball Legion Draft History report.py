@@ -26,6 +26,278 @@ Future : * Build link between the Reported player and their individual StatsPlus
 """
 import numpy as np
 import pandas as pd
+
+
+# ## Draft Year 2031
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2031.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2031')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2031= df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+
+# ## Draft Year 2032
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2032.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2032')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2032 = df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+
+# ## Draft Year 2033
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2033.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2033')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2033 = df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+# ## Draft Year 2034
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2034.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2034')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2034 = df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+
+# ## Draft Year 2035
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2035.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2035')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2035 = df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+
+# ## Draft Year 2036
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2036.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2036')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2036= df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
+# ## Draft Year 2037
+data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2037.csv')
+
+#print(df.head())    # top 5 lines
+#print(df.player)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+#print(df)
+#Add Draft year
+df.insert(10,'Year','2037')
+
+#Drop Columns
+df.drop(columns=['Age','BatWAR', 'PitchWAR'], inplace=True)
+
+#print(df)
+
+# Define the search query
+#search_column = 'Team'
+#search_value = 'MON'
+
+search_column = 'TotalWAR'
+search_value = 0
+
+# Perform search and filter results
+result = df[df[search_column] > search_value]
+
+# Sort by 'TotalWAR' in descending order
+df_2037 = df.sort_values(by='TotalWAR', ascending=False)
+#print("\nSorted by TotalWAR (Descending):\n", df_2038[:10])
+#print("\nSorted by TotalWAR (Descending):\n", df_sorted_twar_desc)
+
+# Display the results in tabular format
+#print(result[:10])  # Top 10 records
+ 
+# #############################
+
 # ## Draft Year 2038
 data = pd.read_csv('C:\\Users\\dgrov\\Downloads\\ABL\\statsplus2038.csv')
 
@@ -551,7 +823,7 @@ df_2051 = df.sort_values(by='TotalWAR', ascending=False)
 #display(df_2038)
 #print()
 
-df = pd.concat([df_2038, df_2039, df_2040, df_2041,df_2042, df_2043, df_2044, df_2045, df_2046, df_2047, df_2048, df_2049, df_2050, df_2051 ], ignore_index=True, sort=True)
+df = pd.concat([df_2031,df_2032,df_2033,df_2034,df_2035,df_2036,df_2037,df_2038, df_2039, df_2040, df_2041,df_2042, df_2043, df_2044, df_2045, df_2046, df_2047, df_2048, df_2049, df_2050, df_2051 ], ignore_index=True, sort=True)
 #print(df)
 
 
