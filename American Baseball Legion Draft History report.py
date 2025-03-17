@@ -563,7 +563,7 @@ df_reordered = df_sorted[['Rank', 'Rnd', 'Pick', 'Ovr', 'Player', 'Team', 'Total
 print(df_reordered [:100])  # Top 100 records
 
 df_reordered.to_csv('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.txt', sep='\t', index=False)
-
+print(df_reordered.to_markdown('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.txt',index=False)) 
 #df_sorted[:10].to_excel('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.xlsx', index=False)
 ##df_sorted[:10].to_excel('ABPL_Draft_Report.xlsx', index=False)
    
