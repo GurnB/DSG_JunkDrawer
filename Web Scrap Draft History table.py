@@ -21,6 +21,10 @@ if table is None:
     exit()
 
 for row in table.find_all("tr"):
+    headers = row.find_all("th")
+    if headers:
+        header_data = [header.text.strip() for header in headers]
+        print(header_data)
     cells = row.find_all("td")
     if cells:
         row_data = [cell.text.strip() for cell in cells]
