@@ -26,6 +26,9 @@ Future : * Build link between the Reported player and their individual StatsPlus
 """
 import numpy as np
 import pandas as pd
+
+filepath = 'C:\\Users\\dgrov\\Downloads\\ABL\\'
+filename = 'statsplus2031.csv'
 # ######
 
 # ## Draft Year 2031
