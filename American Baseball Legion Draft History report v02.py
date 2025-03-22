@@ -26,6 +26,9 @@ Future : * Build link between the Reported player and their individual StatsPlus
 """
 import numpy as np
 import pandas as pd
+
+filepath = 'C:\\Users\\dgrov\\Downloads\\ABL\\'
+filename = 'statsplus2031.csv'
 # ######
 
 filepath = 'C:\\Users\\dgrov\\Downloads\\ABL\\'
@@ -498,14 +501,14 @@ df = pd.concat([df_2031,df_2032,df_2033,df_2034,df_2035,df_2036,df_2037,df_2038,
 
 df_sorted = df.sort_values(by='TotalWAR', ascending=False)
 df_sorted.insert(0,'Rank', df_sorted['TotalWAR'].rank(method='dense', ascending=False).astype(int))
-df['TotalWAR'] = df['TotalWAR'].apply(lambda x: f'{x:.2f}') # Format to 2 decimal places
 
 df_reordered = df_sorted[['Rank', 'Rnd', 'Pick', 'Ovr', 'Player', 'Team', 'TotalWAR','Year']] # Reorder the columns
 
 print(df_reordered [:100])  # Top 100 records
 
+
 df_reordered.to_csv('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.txt', sep='\t', index=False)
-print(df_reordered.to_markdown('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.txt',index=False, floatfmt=".2f")) 
+print(df_reordered.to_markdown('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.txt',index=False)) 
 #df_sorted[:10].to_excel('C:\\Users\\dgrov\\Downloads\\ABL\\ABPL_Draft_Report.xlsx', index=False)
 ##df_sorted[:10].to_excel('ABPL_Draft_Report.xlsx', index=False)
    
